@@ -1,0 +1,27 @@
+{
+  "obsidian_vault": "D:\\iCreate\\Vaults\\iPublish",
+  "exclude_patterns": [
+    ".obsidian",
+    ".trash",
+    ".DS_Store",
+    "Thumbs.db"
+  ],
+  "include_patterns": [
+    "*.md",
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.gif",
+    "*.svg",
+    "*.pdf"
+  ],
+  "auto_sync": false,
+  "default_branch": "v4",
+  "build_command": "npx quartz build",
+  "serve_command": "npx quartz build --serve",
+  "github_pages": {
+    "enabled": true,
+    "branch": "gh-pages",
+    "auto_deploy": true
+  }
+}
