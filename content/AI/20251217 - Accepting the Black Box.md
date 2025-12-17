@@ -1,9 +1,11 @@
 
+![[Pasted image 20251217114503.png]]
+
 I've talked many times now about how technology in general, but AI specifically (or should I say "exponentially") creates a black box.
 
 And how you should be weary of that, and introduce AI "top-down" instead of "bottom-up". Start with automating what you understand, instead of hoping AI wil fix things you can't (like make sense of bad or inconsistent and incoherent documentation or data).
 
-But I've changed my mind a little when it comes to using AI for dealing with an "already existing Black Box". For me that is development and coding. I don't want to understand Python, I just want to have the result of the thing it can create. Same goes for the Quartz thing I'm now using.
+But I've changed my mind a little when it comes to using AI for dealing with an "already existing personal Black Box". For me that is development and coding. I don't want to understand Python, I just want to have the result of the thing it can create. Same goes for the Quartz thing I'm now using.
 
 I used to be the kind of person who would dive in, study for hours on how it worked and spent weeks tweaking the code so that the blog would look very pretty. But then I would abandon the project as it had no more to offer. When the whole point of starting it, was to publish! 
 
