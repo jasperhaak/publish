@@ -1,5 +1,4 @@
-
-![[Pasted image 20251217114503.png]]
+![[Pasted image 20251217115223.png|800]]
 
 I've talked many times now about how technology in general, but AI specifically (or should I say "exponentially") creates a black box.
 
