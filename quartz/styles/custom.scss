@@ -1,7 +1,22 @@
-@use "./base.scss";
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@use "./base.scss";
 
 // put your custom CSS here!
+
+:root {
+  --bodyFont: "Bitter", serif;
+  --headerFont: "Bitter", serif;
+}
+
+body {
+  line-height: 1.65;      /* Increase from default to give serifs room */
+  font-size: 1.1rem;      /* Bitter looks great slightly larger */
+  letter-spacing: 0.01em; /* Subtle spacing for better legibility */
+}
+
+p {
+  margin-bottom: 1.5rem;  /* Clearer separation between paragraphs */
+}
 
 :root[aria-theme="light"] {
   --light: #fffcf0;       /* Soft paper background */
@@ -36,7 +51,3 @@ a {
   }
 }
 
-:root {
-  --bodyFont: "Bitter", serif;
-  --headerFont: "Bitter", serif;
-}
