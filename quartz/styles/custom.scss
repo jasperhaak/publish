@@ -9,7 +9,7 @@
 
 body {
   line-height: 1.65;      /* Increase from default to give serifs room */
-  font-size: 1.1rem;      /* Bitter looks great slightly larger */
+  font-size: 1.0rem;      /* Bitter looks great slightly larger */
   letter-spacing: 0.01em; /* Subtle spacing for better legibility */
 }
 
@@ -50,3 +50,12 @@ a {
   }
 }
 
+:root {
+  /* ... existing font variables ... */
+  
+  --code-background: #f8f9fa; /* A very light gray for Light Mode */
+}
+
+:root[aria-theme="dark"] {
+  --code-background: #1e1e2e; /* A deep navy/charcoal for Dark Mode */
+}
