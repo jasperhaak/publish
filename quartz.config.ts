@@ -9,7 +9,7 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "Jasper's Notes & Writings",
-    pageTitleSuffix: "Strategy, AI, Business, Zettelkasten, Philosophy, Mindset & Perspective",
+    pageTitleSuffix: " | Strategy, AI, Business, Zettelkasten, Philosophy, Mindset & Perspective",
     enableSPA: true,
     enablePopovers: true,
     analytics: {

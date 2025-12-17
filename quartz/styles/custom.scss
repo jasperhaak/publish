@@ -8,8 +8,8 @@
 }
 
 body {
-  line-height: 1.65;      /* Increase from default to give serifs room */
-  font-size: 1.0rem;      /* Bitter looks great slightly larger */
+  line-height: 1.55;      /* Increase from default to give serifs room */
+  font-size: 0.9rem;      /* Bitter looks great slightly larger */
   letter-spacing: 0.01em; /* Subtle spacing for better legibility */
 }
 
@@ -58,4 +58,54 @@ a {
 
 :root[aria-theme="dark"] {
   --code-background: #1e1e2e; /* A deep navy/charcoal for Dark Mode */
+}
+
+/* Modern Code Block Styling */
+pre {
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  padding: 1rem !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  
+  /* This ensures the font matches your custom mono font */
+  code {
+    font-family: var(--codeFont);
+    font-size: 0.9em;
+    background: transparent; /* Removes background from inline code inside blocks */
+    padding: 0;
+  }
+}
+
+/* Styling for Inline Code (like `this`) */
+code {
+  background-color: var(--lightgray);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: var(--codeFont);
+}
+
+/* Left Sidebar (Explorer) Customization */
+
+/* 1. The Folders (Containers) */
+.folder-outer > button {
+  font-size: 0.95rem !important; /* Adjust this value */
+  font-weight: 600;              /* Makes folders slightly bolder */
+  font-family: var(--headerFont); 
+}
+
+/* 2. The Files (Items) */
+.explorer-item {
+  font-size: 0.9rem !important;  /* Adjust this value */
+  font-family: var(--bodyFont);
+}
+
+/* 3. The "Explorer" Header itself */
+#explorer-header {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.explorer-item, .folder-container {
+  margin: 2px 0; /* Adjust the first number for more/less vertical space */
 }
