@@ -26,4 +26,5 @@ Links to Index?
 	- Vision
 - Exponential vs Incremental
 - Potentiality
+- Top-down vs Bottom-up
 - 
