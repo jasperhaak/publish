@@ -43,6 +43,8 @@ p {
   /* Light text */
   --secondary: #9db4ff;
   /* Soft blue links */
+  --lightgray: #393639;
+  /* Borders and search bars for Dark Mode */
   --code-background: #2b2b3b;
   /* Lighter background for Dark Mode */
 }
@@ -85,6 +87,12 @@ pre {
     /* Removes background from inline code inside blocks */
     padding: 0;
   }
+}
+
+/* Force transparency on Shiki-highlighted code to let pre background show through */
+code[data-theme*=" "],
+[saved-theme="dark"] code[data-theme*=" "] {
+  background-color: transparent !important;
 }
 
 /* Styling for Inline Code (like `this`) */
