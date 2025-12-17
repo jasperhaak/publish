@@ -1,17 +1,20 @@
-code[data-theme*=" "] {
+/* Syntax highlighting for code blocks */
+pre code[data-theme*=" "] {
   color: var(--shiki-light);
   background-color: var(--shiki-light-bg);
 }
 
-code[data-theme*=" "] span {
-  color: var(--shiki-light);
+/* Allow syntax highlighting spans to have their colors */
+pre code[data-theme*=" "] span {
+  color: inherit;
 }
 
-[saved-theme="dark"] code[data-theme*=" "] {
+/* Dark mode syntax highlighting */
+[saved-theme="dark"] pre code[data-theme*=" "] {
   color: var(--shiki-dark);
   background-color: var(--shiki-dark-bg);
 }
 
-[saved-theme="dark"] code[data-theme*=" "] span {
-  color: var(--shiki-dark);
+[saved-theme="dark"] pre code[data-theme*=" "] span {
+  color: inherit;
 }

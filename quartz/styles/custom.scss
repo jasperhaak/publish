@@ -21,7 +21,8 @@ p {
   /* Clearer separation between paragraphs */
 }
 
-:root[aria-theme="light"] {
+:root,
+:root[saved-theme="light"] {
   --light: #fffcf0;
   /* Soft paper background */
   --lightgray: #e5e5e5;
@@ -36,7 +37,7 @@ p {
   /* Darker background for Light Mode */
 }
 
-:root[aria-theme="dark"] {
+:root[saved-theme="dark"] {
   --light: #161617;
   /* Deep charcoal */
   --darkgray: #d4d4d4;
@@ -89,10 +90,30 @@ pre {
   }
 }
 
-/* Force transparency on Shiki-highlighted code to let pre background show through */
-code[data-theme*=" "],
-[saved-theme="dark"] code[data-theme*=" "] {
-  background-color: transparent !important;
+/* Fix for Shiki-highlighted code backgrounds */
+pre {
+  /* Code blocks inside pre elements */
+  code[data-theme*=" "] {
+    background-color: var(--shiki-light-bg) !important;
+    color: var(--shiki-light) !important;
+  }
+
+  /* Allow syntax highlighting spans to have their colors */
+  code[data-theme*=" "] span {
+    color: inherit;
+  }
+}
+
+/* Dark mode for code blocks */
+[saved-theme="dark"] pre {
+  code[data-theme*=" "] {
+    background-color: var(--shiki-dark-bg) !important;
+    color: var(--shiki-dark) !important;
+  }
+
+  code[data-theme*=" "] span {
+    color: inherit;
+  }
 }
 
 /* Styling for Inline Code (like `this`) */
