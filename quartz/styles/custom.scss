@@ -8,27 +8,43 @@
 }
 
 body {
-  line-height: 1.55;      /* Increase from default to give serifs room */
-  font-size: 0.9rem;      /* Bitter looks great slightly larger */
-  letter-spacing: 0.01em; /* Subtle spacing for better legibility */
+  line-height: 1.55;
+  /* Increase from default to give serifs room */
+  font-size: 0.9rem;
+  /* Bitter looks great slightly larger */
+  letter-spacing: 0.01em;
+  /* Subtle spacing for better legibility */
 }
 
 p {
-  margin-bottom: 1.5rem;  /* Clearer separation between paragraphs */
+  margin-bottom: 1.5rem;
+  /* Clearer separation between paragraphs */
 }
 
 :root[aria-theme="light"] {
-  --light: #fffcf0;       /* Soft paper background */
-  --lightgray: #e5e5e5;   /* Borders and search bars */
-  --darkgray: #454545;    /* Body text */
-  --secondary: #37633d;  /* Links and headers (Forest Green) */
-  --tertiary: #84a59d;   /* Hover states */
+  --light: #fffcf0;
+  /* Soft paper background */
+  --lightgray: #e5e5e5;
+  /* Borders and search bars */
+  --darkgray: #454545;
+  /* Body text */
+  --secondary: #37633d;
+  /* Links and headers (Forest Green) */
+  --tertiary: #84a59d;
+  /* Hover states */
+  --code-background: #eff1f3;
+  /* Darker background for Light Mode */
 }
 
 :root[aria-theme="dark"] {
-  --light: #161617;       /* Deep charcoal */
-  --darkgray: #d4d4d4;    /* Light text */
-  --secondary: #9db4ff;  /* Soft blue links */
+  --light: #161617;
+  /* Deep charcoal */
+  --darkgray: #d4d4d4;
+  /* Light text */
+  --secondary: #9db4ff;
+  /* Soft blue links */
+  --code-background: #2b2b3b;
+  /* Lighter background for Dark Mode */
 }
 
 // Make blockquotes look more elegant
@@ -44,21 +60,14 @@ blockquote {
 a {
   text-decoration: none;
   transition: color 0.2s ease;
+
   &:hover {
     color: var(--tertiary);
     text-decoration: underline;
   }
 }
 
-:root {
-  /* ... existing font variables ... */
-  
-  --code-background: #eff1f3; /* Darker background for Light Mode (was #f8f9fa) */
-}
 
-:root[aria-theme="dark"] {
-  --code-background: #2b2b3b; /* Lighter background for Dark Mode (was #1e1e2e) */
-}
 
 /* Modern Code Block Styling */
 pre {
@@ -66,13 +75,14 @@ pre {
   border: 1px solid var(--lightgray);
   border-radius: 8px;
   padding: 1rem !important;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
   /* This ensures the font matches your custom mono font */
   code {
     font-family: var(--codeFont);
     font-size: 0.9em;
-    background: transparent; /* Removes background from inline code inside blocks */
+    background: transparent;
+    /* Removes background from inline code inside blocks */
     padding: 0;
   }
 }
@@ -88,15 +98,18 @@ code {
 /* Left Sidebar (Explorer) Customization */
 
 /* 1. The Folders (Containers) */
-.folder-outer > button {
-  font-size: 0.95rem !important; /* Adjust this value */
-  font-weight: 600;              /* Makes folders slightly bolder */
-  font-family: var(--headerFont); 
+.folder-outer>button {
+  font-size: 0.95rem !important;
+  /* Adjust this value */
+  font-weight: 600;
+  /* Makes folders slightly bolder */
+  font-family: var(--headerFont);
 }
 
 /* 2. The Files (Items) */
 .explorer-item {
-  font-size: 0.9rem !important;  /* Adjust this value */
+  font-size: 0.9rem !important;
+  /* Adjust this value */
   font-family: var(--bodyFont);
 }
 
@@ -107,6 +120,8 @@ code {
   letter-spacing: 0.1rem;
 }
 
-.explorer-item, .folder-container {
-  margin: 2px 0; /* Adjust the first number for more/less vertical space */
+.explorer-item,
+.folder-container {
+  margin: 2px 0;
+  /* Adjust the first number for more/less vertical space */
 }
